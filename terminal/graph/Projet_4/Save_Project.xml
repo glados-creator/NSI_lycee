@@ -1,0 +1,14 @@
+Save_Project.xml
+[myc.project]{
+DATA=[NoneType]{
+}
+DATA_W=[int]{False}
+GLOBAL=[dict]{
+}
+menu_stack=[list]{
+}
+pygame=[int]{True}
+save_file_path=[str]{
+}
+tkinter=[int]{True}
+}

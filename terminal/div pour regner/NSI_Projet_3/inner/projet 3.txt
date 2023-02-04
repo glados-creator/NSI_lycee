@@ -1,0 +1,7 @@
+6 	points max data1  -> 6
+7 	points max data2  -> 7
+15	point max data3 -> 15  OK
+
+demander noms de fichier
+afficher nombre de points total
+afficher nombre max
