@@ -1,0 +1,92 @@
+:root {
+    --color-black: rgb(0, 0, 0);
+    --color-gray: rgb(75, 75, 75);
+    --color-blue: rgba(95, 7, 136, 0.795);
+}
+
+body {
+    margin: 0;
+    height: 100%;
+    background-color: var(--color-blue);
+    color: white;
+}
+
+.login {
+    display: none;
+    width: 90%;
+}
+
+.create {
+    display: none;
+    width: 90%;
+}
+
+header {
+    background-color: var(--color-black);
+    top: 0px;
+    position: sticky;
+}
+
+.banner {
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-around;
+}
+
+.elderscoll {
+    height: calc(100% - 6rem);
+    overflow: hidden;
+    vertical-align: top;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+    scroll-snap-align: center;
+    scroll-snap-align: start;
+    flex-flow: column nowrap;
+    flex: None;
+}
+
+article {
+    background-color: var(--color-gray);
+    width: 100%;
+    scroll-snap-align: start;
+    justify-content: center;
+}
+
+footer {
+    bottom: 0;
+    width: 90%;
+}
+
+table, th, td {
+    border: 2px solid var(--color-blue);
+    background-color: var(--color-gray);
+    width: 90%;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+}
+
+.menu {
+    background-color: var(--color-gray);
+    display: inline-block;
+    width: 100%;
+}
+
+.menu>*{
+    display: inline-block;
+    vertical-align: top;
+    top:0;
+}
+
+.center {
+    background-color: var(--color-black);
+    width: 100%;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    margin: 25px;
+}
+
+#console_div {
+    display: none;
+}

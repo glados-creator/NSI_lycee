@@ -1,0 +1,6 @@
+$conn = new mysqli('localhost', 'root', '');
+mysql -h localhost -u root
+
+Import Database :- D:/xampp/mysql/bin/mysql -u root -p databasename < D:/test.sql (sql file name)
+
+Export Database :- C:/xampp/mysql/bin/mysqldump -u root -p motel > C:/Users/.../Documents/text.sql

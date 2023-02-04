@@ -1,0 +1,10 @@
+input file name : E:/NSI_Projet_3/data/data_5_7.csv
+nomber of points 1000
+number of pareto point 5
+[
+	(950.0, 999.0),
+	(996.0, 997.0),
+	(997.0, 887.0),
+	(997.0, 734.0),
+	(999.0, 206.0),
+]
