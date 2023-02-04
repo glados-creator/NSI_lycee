@@ -1,0 +1,31 @@
+Vous devez réaliser un site Web qui réponde au minimum au cahier des charges suivant :
+
+➢ Le site gère la liste des abonnés d’un club informatique.
+➢ Chaque abonné sera caractérisé au minimum par :
+
+son nom,
+son prénom,
+sa date de naissance,
+son adresse,
+son numéro de téléphone,
+son adresse mail.
+
+➢ L’inscription des abonnés se fait à partir du site.
+➢ Chacun peut décider de s’inscrire, à condition d’être majeur.
+➢ Chaque abonné peut consulter le site, voir la liste des abonnés, mais uniquement avec leurs noms et prénoms.
+➢ La consultation des abonnés (avec toutes leurs caractéristiques), un par un ou sous forme de liste, la
+suppression des abonnés, se fait également à partir du site, mais ces opérations ne peuvent être réalisées que
+par l’administrateur du site.
+➢ L’architecture du site sera réalisée selon votre convenance.
+➢ Le stockage des données sera réalisé sous le format de votre choix (txt, json...).
+
+➢ Le modèle de communication entre le client (sur son navigateur Web) et les données sera un modèle client-
+serveur.
+
+➢ Les données seront stockées sur le serveur.
+➢ L’enregistrement et la consultation des données devra se faire en passant par php.
+➢ Langages à utiliser (au minimum) :
+o HTML,
+o CSS,
+o JS,
+o PHP.
