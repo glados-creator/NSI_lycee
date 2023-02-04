@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+    <meta charset ="utf-8" />
+    <title>À la découverte du DOM</title>
+    <link rel="stylesheet" href="styles/styles.css">
+  </head>
+
+  <body>
+
+    <header>
+      <h1>
+        <a href="index.html" titre="Accueil">À la découverte du DOM</a>
+      </h1>
+      <h2>Au-delà de HTML et CSS...</h2>
+    </header>
+
+    <div>
+      <p>
+        HTML5 et CSS3 sont des langages qui, utilisés ensemble, permettent une grande variété d’affichages. CSS, le langage de description de la mise en forme, a maintenant des capacités tellement étendues qu’il permet de faire facilement des animations :
+      </p>
+
+      <img id="atome" src="images/atome.png" alt="noyau et électron" />
+    </div>
+
+    <div>
+      <p>
+        Grâce à CSS, il est aussi possible de donner un peu plus d'interactivité à la page, par exemple au survol d'un élément par la souris, comme sur le paragraphe suivant :
+      </p>
+
+      <p id="psychedelique">
+        Un élément particulier
+      </p>
+    </div>
+
+    <div>
+      <p>En résumé, une grande partie des comportements que l'on peut prédéfinir pour l'affichage et la mise en page peut être gérée par CSS. Par contre, pour tout ce qui concerne les <em>interactions</em> avec l'utilisateur, il faut procéder autrement et utiliser le langage Javascript (JS), qui est un langage de programmation. Par opposition aux langages de description HTML/CSS, on peut l'utiliser pour programmer des prises de décision à partir de données fournies. Par exemple, il est possible de <em>choisir</em> une couleur de texte pour cette page avec les boutons suivants qui ont été configurés en JS :</p>
+
+      <input type="color" id="choixColor" value="white" /><br>
+      <input type="submit" id="changeColor" class="boutonAction" value="changer la couleur"/>
+    </div>
+
+    <div>
+      <p>Il est aussi possible de modifier le contenu HTML de la page et, par exemple, faire disparaître ou réapparaître l'image de l'atome ci-dessus avec le bouton suivant dont le message change :</p>
+
+      <div id="disparition" class="boutonAction">Une tragédie atomique</div>
+    </div>
+
+    <div>
+      <p>
+        On peut vraiment aller très loin... Par exemple faire disparaître la mise en page CSS... Cliquer sur le cercle ci-dessous pour s'en persuader (une fois l'effet constaté, pour revenir à l'état initial il faut recharger la page).
+      </p>
+
+      <div id="cercleAntiCSS">CSS</div>
+    </div>
+
+    <nav>
+      <a href="index.html" titre="Accueil">Retour à l'accueil</a>
+    </nav>
+
+    <script src="scripts/traitement.js"></script>
+    <script src="scripts/traitementViaDOM.js"></script>
+  </body>
+
+</html>

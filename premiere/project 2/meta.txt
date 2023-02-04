@@ -1,0 +1,8 @@
+json type
+
+question : Union [ str ; {random} ]
+
+reponse list[ Union[auto ; str ;{random}] ]
+
+
+

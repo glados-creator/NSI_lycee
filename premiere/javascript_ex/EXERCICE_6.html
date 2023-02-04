@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <link rel="stylesheet" href="style3tp1.css" />
+    <title>Exercice 6</title>
+</head>
+
+<body>
+    <header>
+        <h1> Calculatrice </h1>
+    </header>
+    <section>
+        <form id="form">
+            <fieldset class="champ">
+                <div>
+                    <label> Valeur du nombre 1 </label>
+                    <input id="value1" type="text" name="nombre_1">
+                </div>
+                <div>
+                    <label> Valeur du nombre 2 </label>
+                    <input id="value2" type="text" name="nombre_2">
+                </div>
+            </fieldset>
+            <fieldset class="champ">
+                <input type="button" value="addition" onclick="add()">
+                <input type="button" value="soustraction" onclick="substract()">
+                <input type="button" value="multiplication" onclick="multiply()">
+                <input type="button" value="division" onclick="divide()">
+                <input type="button" value="RESET" onclick="reset_bouton()">
+            </fieldset>
+        </form>
+
+        <!-- AFFICHAGE DU RESULTAT-->
+        <p id="affiche_resultat"> TEST </p>
+        <script type="text/javascript">
+
+            const resultat = document.getElementById('affiche_resultat')
+
+            function calcul(callback) {
+                const num1 = document.getElementById('value1').value
+                const num2 = document.getElementById('value2').value
+
+                const n1 = Number.parseFloat(num1)
+                const n2 = Number.parseFloat(num2)
+
+                if ([n1, n2].some((x) => Number.isNaN(x) || !Number.isFinite(x))) {
+                    alert("Le nombre n'est pas valide")
+                    return
+                }
+
+                resultat.innerText = callback(n1, n2)
+            }
+
+            function add() {
+                calcul((n1, n2) => n1 + n2)
+            }
+
+            function substract() {
+                calcul((n1, n2) => n1 - n2)
+            }
+
+            function multiply() {
+                calcul((n1, n2) => n1 * n2)
+            }
+
+            function divide() {
+                calcul((n1, n2) => {
+                    if (n2 == 0) {
+                        return "Division par zéro impossible"
+                    }
+
+                    return n1 / n2
+                })
+            }
+
+            function reset_bouton() {
+                document.getElementById("form").reset()
+                resultat.innerText = "TEST"
+            }
+
+        </script>
+    </section>
+</body>
+
+</html>

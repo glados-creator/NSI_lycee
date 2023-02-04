@@ -1,0 +1,26 @@
+body
+{
+   background-color:#306090;
+   color:#ffffff;
+   font-family:"Trebuchet MS",Verdana,Geneva,Arial,Helvetica,sans-serif;
+   font-size:small;
+   margin:2em 1%;
+   padding:0;
+}
+
+#page
+{
+   color:#000000;
+   background-color:#ffffff;
+   background-image:url("http://openweb.eu.org/squelettes/style/original/fond.png");
+   background-position:top right;
+   background-repeat:no-repeat;
+   border:3px solid #000000;
+   min-height:55em;
+   height:55em;
+}
+
+html>body #page
+{
+   height:auto;
+}

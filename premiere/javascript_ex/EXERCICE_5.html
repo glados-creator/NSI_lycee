@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset = 'utf-8'>
+	<link rel = "stylesheet" href = "style3tp1.css"/>
+	<title>Exercice 5</title>
+	</head>
+	
+	<body>
+	<header>
+		<h1> Calculatrice </h1>
+	</header>
+	<section>
+		<form name = "myForm">
+			<fieldset class = "champ">
+				<div>
+					<label> Valeur du nombre 1 </label>
+					<input id = "value1" type = "text" name = "nombre_1" >
+				</div>
+				<div>
+					<label> Valeur du nombre 2 </label>
+					<input id = "value2" type = "text" name = "nombre_2">
+				</div>
+			</fieldset>
+			<fieldset class="champ">
+				<input type="button" value = "addition" onclick = "add()" >
+				<input type="button" value = "soustraction" onclick = "soustraction()" >
+				<input type="button" value = "multiplication" onclick = "multiplication()" >
+				<input type="button" value = "division" onclick = "division()" >
+			</fieldset>
+			<fieldset>
+				<input type="reset" name="reset" id="reset" onclick='document.getElementById("myForm").reset();'>
+			</fieldset>
+		</form>
+
+<!-- AFFICHAGE DU RESULTAT-->
+		<p id = "affiche_resultat">  </p>
+		<script type = "text/javascript">
+		function add() {
+			var r = document.getElementById("affiche_resultat");
+			var i1 = document.getElementById("value1").value;
+			var i2 = document.getElementById("value2").value;
+
+			r.innerHTML = parseFloat(i1)+parseFloat(i2)
+		}
+		function soustraction(){
+			var r = document.getElementById("affiche_resultat");
+			var i1 = document.getElementById("value1").value;
+			var i2 = document.getElementById("value2").value;
+
+			r.innerHTML = parseFloat(i1) - parseFloat(i2)
+		}
+		function multiplication(){
+			var r = document.getElementById("affiche_resultat");
+			var i1 = document.getElementById("value1").value;
+			var i2 = document.getElementById("value2").value;
+
+			r.innerHTML = parseFloat(i1) * parseFloat(i2)
+		}
+		function division(){
+			var r = document.getElementById("affiche_resultat");
+			var i1 = document.getElementById("value1").value;
+			var i2 = document.getElementById("value2").value;
+			if (i2 != 0){
+			r.innerHTML = parseFloat(i1) / parseFloat(i2);}
+			else {r.innerHTML = "division par 0"}
+		}
+		</script>
+	</section>
+	</body>
+</html>
+

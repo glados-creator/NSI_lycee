@@ -1,0 +1,8 @@
+<!DOCTYPE html >
+<html lang="fr">
+   <head>
+       
+       <meta charset="utf-8" />
+	   <!--<link  href="style1tp1.css" rel="stylesheet"/> -->
+	   <title></title>
+   </head>

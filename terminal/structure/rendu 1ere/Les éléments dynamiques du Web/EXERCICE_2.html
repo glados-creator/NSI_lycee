@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset = 'utf-8'>
+  <title>Exercice 2</title>
+ </head>
+ <body>
+
+  <form>
+   <input id = 'valeur' type = "text" name = "nombre">
+   <input id = 'bouton' type = "button" value = "cube">
+  </form>
+
+  <script type = "text/javascript">
+    let cube = document.getElementById('bouton');
+    cube.onclick = function() {
+	    arg=document.getElementById('valeur').value;
+        console.log(arg);
+		alert(Math.pow(arg,3));
+    }
+  </script>
+ </body>
+</html>
+

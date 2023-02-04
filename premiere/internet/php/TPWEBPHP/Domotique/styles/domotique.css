@@ -1,0 +1,71 @@
+﻿/* --------------------------------------------------- */
+/* Lycée Pierre Emile Martin 1, Av de Gionne           */
+/* 18000 Bourges                                       */
+/* TP2 Web                                             */
+/* Décoration d'une page HTML avec des CSS             */
+/* Feuille de style associée à la page mesurephys.html */
+/* --------------------------------------------------- */
+
+body{
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+h1, p, hr{
+	margin:0px;
+}
+
+h1 {
+	font-size:25px;		
+	font-style:italic;
+}
+
+table{
+	 margin:0px auto;
+}
+
+td{
+	padding:5px;
+}
+		 
+.page{
+	padding:5px;
+	border: solid 1px;
+	width: 500px;
+	margin:0px auto; /* Assure le centrage de la page */ 
+	background-color:#3AB54A;
+}
+
+/* ------------------- En-tête de page --------------------*/
+/* --------------------------------------------------------*/
+.header{
+	
+}
+
+.logo{
+	display: inline-block;
+	padding:1px;
+}
+
+.baniere{
+	max-width:447px;
+	display: inline-block;
+	vertical-align:top;
+	padding-top:22px;
+	font-size:30px;
+}
+
+/* ---------------- Contenu de la page --------------------*/
+/* --------------------------------------------------------*/
+.content{
+	padding:20px;
+	font-size:20px;
+}
+
+/* ---------------------Pied de page ----------------------*/
+/* --------------------------------------------------------*/
+.footer{
+
+	padding:10px;
+	text-align:center;
+	font-size:10px;
+}

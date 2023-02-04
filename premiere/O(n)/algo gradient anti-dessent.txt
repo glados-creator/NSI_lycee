@@ -1,0 +1,50 @@
+n : list
+l : int
+i : int
+r : int
+
+input list n
+(1) l <- longeur(n)
+(1) i <- 0
+(n)  tant que i <= l:
+(n)     si r < n[i]:
+(1)         r <- x
+(n)     i <- i +1
+
+O(n) = 3n+3
+O(n) = (3)n
+
+input = [3,5,1,8,4,2]
+
+[3,5,1,8,4,2]
+
+l <- longeur(n)
+l = 6
+i= 0
+
+tant que i < l:
+
+tant que 0 <= 6:
+    si (r) None < (n[0]) 3 -> vrai:
+        r = 3 
+
+tant que 1 <= 6:
+    si (r) None < (n[1]) 5 -> vrai:
+        r = 5
+
+tant que 2 <= 6:
+    si (r) None < (n[2]) 1 -> faux
+
+tant que 3 <= 6:
+    si (r) None < (n[3]) 8 -> vrai:
+        r = 8
+
+tant que 4 <= 6:
+    si (r) None < (n[4]) 4 -> faux
+
+tant que 5 <= 6:
+    si (r) None < (n[5]) 2 -> faux
+
+tant que 6 <= 6 vrai
+Fin
+retourn 8

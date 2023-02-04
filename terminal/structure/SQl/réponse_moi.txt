@@ -1,0 +1,134 @@
+III)
+1)
+create database hotels;
+use hotels;
+2)
+CREATE TABLE client (
+  
+idc int,
+  
+nomc varchar(15),
+  
+prenomc varchar(15),
+  
+PRIMARY KEY (idc)
+);
+
+
+
+CREATE TABLE reservation (
+  
+idresa int,
+  
+dateresa date,
+  
+idch int,
+idc int,
+  
+PRIMARY KEY (idresa)
+);
+
+
+
+CREATE TABLE hotel (
+  
+idh int,
+  
+nomh varchar(30),
+  
+PRIMARY KEY (idh)
+)
+;
+
+
+
+CREATE TABLE chambre (
+  
+idch int,
+  
+numch int,
+  
+prixch decimal(10,5),
+idh int,
+  
+PRIMARY KEY (idch)
+);
+
+ALTER TABLE reservation ADD FOREIGN KEY (idch) REFERENCES chambre (idch);
+ALTER TABLE reservation ADD FOREIGN KEY (idc) REFERENCES client (idc);
+ALTER TABLE chambre ADD FOREIGN KEY (idh) REFERENCES hotel (idh);
+
+3)
+INSERT INTO `client` (`idc`, `nomc`, `prenomc`) VALUES
+(1, 'hunt', 'victor'),
+(2, 'adam', 'martine'),
+(3, 'lois', 'anne');
+INSERT INTO `hotel` (`idh`, `nomh`) VALUES
+(1, 'Hotel du Nord'),
+(2, 'Hotel Ibis'),
+(3, 'Hotel de Paris'),
+(4, 'Hotel du lac'),
+(5, 'Hotel du Vieux'),
+(6, 'Hotel de Lyon');
+INSERT INTO `chambre` (`idch`, `numch`, `prixch`, `idh`) VALUES
+(1, 100, 50, 1),
+(2, 100, 75, 4),
+(3, 102, 40, 5),
+(4, 103, 130, 3),
+(5, 23, 45, 1),
+(6, 200, 80, 6),
+(7, 220, 80, 6);
+INSERT INTO `reservation` (`idresa`, `dateresa`, `idch`, `idc`) VALUES
+(1, '2019-06-14', 3, 3),
+(2, '2019-05-01', 4, 2),
+(3, '2019-11-18', 2, 3),
+(4, '2019-02-21', 1, 1),
+(5, '2019-09-15', 5, 3),
+(6, '2019-08-16', 5, 2);
+
+4)
+source creation_hotels.sql
+source jeu_essai_hotels.sql
+
+5)
+SHOW DATABASES LIKE 'hotels';
+use hotels;
+SHOW TABLES;
+
+desc chambre;
+desc client;
+desc hotel;
+desc reservation;
+
+select * from chambre;
+select * from client;
+select * from hotel;
+select * from reservation;
+
+IV)
+1)
+pour modifier un parametre d'une table la commande est "ALTER TABLE table_name ADD column_name datatype;"
+donc pour ajouter un numéro de téléphone a chaque client il faut faire
+ALTER TABLE client ADD numtelc varchar(20);
+
+2)
+il faut modifier la table reservation pour l'argument et faire que ca soit une clé étrangère
+ALTER TABLE reservation ADD prixresa decimal(10,5);
+ALTER TABLE reservation ADD FOREIGN KEY (prixresa) REFERENCES chambre (prixch);
+
+3)
+il va falloir modifier la table de réservation encore avec une contrainte check
+ALTER TABLE reservation add acompte decimal(10,5);
+ALTER TABLE reservation ADD CHECK (acompte<prixresa and acompte>0);
+
+
+
+
+
+
+4)
+INSERT INTO `chambre` (`idch`, `numch`, `prixch`, `idh`) VALUES
+ (8,200,80,6),(9,220,80,6);
+
+V)
+1) select nomh,idch from chambre join hotel on chambre.idch=hotel.idh where prixch<100

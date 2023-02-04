@@ -1,0 +1,50 @@
+n : list
+r : float
+i : int
+l : int
+t : int
+
+input n
+(1)  l <- longeur(n)
+(1)  i <- 0
+(n)  tant que i <= l:
+(n)     t <- t + n[i]
+(/)  r <- t / l
+
+
+O(n)
+
+input [3,5,1,8,4,2]
+
+l <- longeur(n)
+l = 6
+i = 0
+
+tant que i <= l:
+   t <- t + n[i]
+
+tant que 0 <= 6:
+    3 = None + 3
+
+tant que 1 <= 6:
+    8 = 3 + 5
+
+tant que 2 <= 6:
+    9 = 8 + 1
+
+tant que 3 <= 6:
+    17 = 9 + 8
+
+tant que 4 <= 6:
+    21 = 17 + 4
+
+tant que 5 <= 6:
+    23 = 21 + 2
+
+tant que 6 <= 6 vrai
+
+r = t / l
+3.833 = 23/6
+
+Fin retourn 3.833
+

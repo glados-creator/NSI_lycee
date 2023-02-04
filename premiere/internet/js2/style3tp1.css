@@ -1,0 +1,185 @@
+body
+{
+   background-color:#306090;
+   color:#ffffff;
+   font-family:"Trebuchet MS",Verdana,Geneva,Arial,Helvetica,sans-serif;
+   font-size:small;
+   margin:1em 1%;
+   padding:10px;
+   border:3px solid black;
+   
+}
+
+#page
+{
+   color:#000000;
+   background-color:#ffffff;
+   /*background-image:url("http://openweb.eu.org/squelettes/style/original/fond.png");
+   background-position:top right;
+   background-repeat:no-repeat;*/
+   border:3px solid #000000;
+   min-height:20em;
+   height:55em;
+}
+
+header
+{
+   margin:2em 3% 1% 3%;
+   /*padding:0.05em 0 0.05em 0;*/
+   font-size:200%;
+   height:25%;
+   background-color:#ffd000;
+   border:1px solid black;
+   border-radius:25px;
+   box-shadow: 6px 2px 6px black ;
+}
+
+header h1
+{
+   font-family:"Comic Sans MS",Arial,Helvetica,sans-serif;
+   text-align:center;
+   margin-top:20px;
+   margin-left:120px;
+   
+}
+
+header .logo
+{
+   float:left;
+   margin-top:20px;
+   margin-bottom:5px;
+   margin-left:1%;
+   display:block;
+   
+}
+
+
+
+nav
+{
+border-color:#f09000;
+border-style:solid;
+border-width:1px 1px 3px 1px;
+margin:2em 3% 1% 3%;
+padding-left:0em;
+text-align:center;
+height:200px;
+border-radius:25px;
+box-shadow: 6px 2px 6px black ;
+
+}
+
+
+/*On centre le mot "Au menu " dans le nav*/
+ nav h1
+ {
+ text-align:center;
+ background-color:#FFFF00;
+ width:120px;
+ margin-left:50%;
+ border:1px solid;
+ border-radius:25px;
+ }
+ 
+ /*Le premier container dans nav se place à 43% du bord gauche de nav
+ en dessous du mot "au menu" */
+ nav .container:first-of-type
+	{
+ 		margin-top:0;
+		margin-left:43%; /*commande importante*/
+		width:120px;
+	}
+ 
+ /* A partir du deuxième container dans l'arbre, on les met tous à l'horizontale sur une ligne
+ en dessous du mot "au menu" en les faisant flotter à gauche*/
+ .container:nth-child(n+2)
+ {
+ float:left;  /*Commande importante*/
+ margin-left:0;
+ margin-top:0;
+ width:120px;
+ }
+ /*Les entêtes sont sur fond jaune*/
+ nav  h2
+ {
+ background-color:#FFFF00;
+ margin:0;
+ border:1px solid;
+ border-radius:25px;
+ }
+ 
+
+/* Toutes les listes ul de nav sont cachées (et aussi les li par héritage). 
+On ne voit donc que les mots Entrées , Plats et dessert à l'horizontale*/
+
+ nav  ul
+ {
+ display:none; /*commande importante*/
+ padding:0;
+ margin:0;
+ width:120px;
+ }
+
+/* les list items n'ont pas de puces et ont une couleur de fond jaune*/ 
+
+nav li {
+ list-style:none;
+ margin:0;
+ padding:0;
+ width:120px;
+ background-color:#FFFF00;
+ }
+/* Quand un item est survolé la couleur du fond devient plus foncé*/
+ nav li:hover
+ {
+ background-color:green;
+ }
+/*Pour une liste immédiatement précédée d'un mot encadré par un h2 qui a été survolé à l'écran par la souris
+on arrête le flottement à gauche, et on la montre donc la liste elle se met donc en dessous du mot h2 survolé 
+dans le container sur une largeur fixée à 120 pixels*/
+
+nav .container h2:hover + ul
+{
+display:block; /*commande importante*/
+margin-top:0;
+width:120px;
+background-color:green;
+position:absolute;
+}
+
+/*Astuce pour que la liste des items ne disparaisse pas lorsqu'on ne survole plus l'entête
+Ne marche que si le container ne déborde pas , autrement dit ne  fixer ni de largeur ni de hauteur au container*/
+
+nav .container:hover ul 
+{
+display:block;
+position:absolute;
+width:120px;
+margin:0;
+}
+
+/* Les liens sont  sans décoration*/
+nav  a 
+{
+ color:black;
+ width:120px;
+ text-decoration:none;
+ }
+/* Quand un lien est survolé il change de couleur*/
+nav  a:hover 
+{
+ display:block;
+ color:#FFD700;
+ border-radius:25px;
+ background-color:green;
+ }
+article
+{
+color:#000000;
+background-color:#f5f8fc;
+border:1px solid #6090c0;
+border-radius:25px;
+margin:2em 3% 1% 3%;
+padding:0 2% 3em 2%;
+box-shadow: 6px 2px 6px black ;
+}
