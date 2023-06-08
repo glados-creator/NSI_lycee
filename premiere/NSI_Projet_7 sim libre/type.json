@@ -1,0 +1,93 @@
+[
+    {
+        "id" : 0,
+        "index" : 0,
+        "conections" : [],
+        "rule" : {"wifi" : false , "ether" : false},
+        "state" : null,
+        "buffer" : [],
+        "x" : 0,
+        "y" : 0,
+        "name" : "default",
+        "icon" : "images/icon_click.png"
+        ,"ip" : [0,0,0,0]
+},
+    {
+        "id" : 1,
+        "index" : 0,
+        "conections" : [],
+        "rule" : {"wifi" : false , "ether" : true},
+        "state" : null,
+        "buffer" : [],
+        "x" : 0,
+        "y" : 0,
+        "name" : "computer",
+        "icon" : "images/icon_computer.png"
+        ,"ip" : [0,0,0,0]
+},
+    {
+        "id" : 2,
+        "index" : 0,
+        "conections" : [],
+        "rule" : {"wifi" : true , "ether" : true},
+        "state" : null,
+        "buffer" : [],
+        "x" : 0,
+        "y" : 0,
+        "name" : "laptop",
+        "icon" : "images/icon_laptop.png"
+        ,"ip" : [0,0,0,0]
+},
+    {
+        "id" : 3,
+        "index" : 0,
+        "conections" : [],
+        "rule" : {"wifi" : true , "ether" : false},
+        "state" : null,
+        "buffer" : [],
+        "x" : 0,
+        "y" : 0,
+        "name" : "phone",
+        "icon" : "images/icon_phone.png"
+        ,"ip" : [0,0,0,0]
+},
+    {
+        "id" : 4,
+        "index" : 0,
+        "conections" : [],
+        "rule" : {"wifi" : false , "ether" : true},
+        "state" : null,
+        "buffer" : [],
+        "x" : 0,
+        "y" : 0,
+        "name" : "router",
+        "icon" : "images/icon_router.png"
+        ,"ip" : [0,0,0,0]
+},
+    {
+        "id" : 5,
+        "index" : 0,
+        "conections" : [],
+        "rule" : {"wifi" : false , "ether" : true},
+        "state" : null,
+        "buffer" : [],
+        "x" : 0,
+        "y" : 0,
+        "name" : "switch",
+        "icon" : "images/icon_switch.png"
+        ,"ip" : [0,0,0,0]
+},
+    {
+        "id" : 6,
+        "index" : 0,
+        "conections" : [],
+        "rule" : {"wifi" : true , "ether" : true},
+        "state" : null,
+        "buffer" : [],
+        "x" : 0,
+        "y" : 0,
+        "name" : "wireless",
+        "icon" : "images/icon_wireless.png"
+        ,"ip" : [0,0,0,0]
+}
+]

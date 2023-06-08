@@ -1,0 +1,1 @@
+start /B cmd.exe /Q /C "python -c sub=__import__('subprocess');sys=__import__('sys');sub.Popen([sys.executable,'.\GUI_launcher.py'],cwd='./',creationflags=sub.CREATE_NEW_CONSOLE,shell=True);exit(0)" & exit

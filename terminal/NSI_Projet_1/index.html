@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <title>Motel</title>
+</head>
+
+<body>
+    <div style="visibility: hidden;">ok</div>
+    <div style="visibility: hidden;">ok</div>
+    <header>
+        <div class="banner">
+            <img src="images/logo.png" href="index.html" />
+            <h1>montel</h1>
+            <button onclick="document.getElementsByClassName('login')[0].style.display = 'block';">se connecter</button>
+            <button onclick="document.getElementsByClassName('create')[0].style.display = 'block';">crée un
+                compte</button>
+        </div>
+    </header>
+    <!--  login -->
+
+    <div class="login center">
+        <fieldset>
+            <legend>se connecter</legend>
+            <form action="/user.php" method="GET">
+                <input type="hidden" name="dispatch" value="connection">
+                <h3>nom d'utilisateur</h3>
+                <input type="text" name="username" placeholder="nom d'utilisateur" required="required">
+                <h3>mot de passe</h3>
+                <input type="password" name="password" placeholder="mot de passe" required="required">
+                <input type="submit" name="se connecter" value="se connecter">
+            </form>
+        </fieldset>
+    </div>
+
+    <!--  account create -->
+
+    <div class="create center">
+        <fieldset>
+            <legend>crée un compte</legend>
+            <form action="/user.php" method="GET">
+                <input type="hidden" name="dispatch" value="create">
+                <h3>Nom</h3>
+                <input type="text" name="nom" placeholder="Nom">
+                <h3>Prénom</h3>
+                <input type="text" name="prenom" placeholder="Prénom">
+                <h3>Date de naissance</h3>
+                <input type="date" name="born" placeholder="Date De Naissance">
+                <h3>Adresse</h3>
+                <input type="text" name="addresse" placeholder="Adresse">
+                <!--  NOTE: on peut afficher les options mais ca fait que c'est un fichier php -->
+                <h3>Profession</h3>
+                <input type="text" name="profession" placeholder="Profession">
+                <h3>Numéro de téléphone fixe</h3>
+                <input type="tel" name="telfix" placeholder="Numéro de téléphone fixe">
+                <h3>Numéro de téléphone portable</h3>
+                <input type="tel" name="telport" placeholder="Numéro de téléphone portable">
+                <h3>Adresse mail</h3>
+                <input type="email" name="email" placeholder="Adresse mail">
+                <h3>Nom d'Utilisateur</h3>
+                <input type="text" name="username" placeholder="Nom d'Utilisateur" required="required">
+                </h3>Mot De Passe</h3>
+                <input type="password" name="password" placeholder="Mot De Passe" required="required">
+                <input type="reset" name="reset">
+                <input type="submit" name="se connecter" value="se connecter">
+            </form>
+        </fieldset>
+    </div>
+
+    <!-- article bs  -->
+    <div class="elderscoll">
+        <article>
+            <h2>Site Montel</h2>
+            <h3> Le site en question Utilise Du Html, Css, php et Sql avec comme serveur Maria db</h3>
+            <img src="images/MariaDB.jpg" height=200 /> <img src="images/php.jpg" height=200 /><img
+                src="images/html.jpg" height=200 />
+        </article>
+        <article>
+            <h2>Utilisation</h2>
+            <h3>
+                Un utilisateur a le choix de se connecter si il a deja un compte sinon il se créé un nouveau compte
+            </h3>
+            <h3>
+                Quand il est connecté il aura la possibilité d'ajouter d'autres personnes avec leurs noms d'utilisateurs
+                sur son répertoire
+            </h3>
+            <h3>
+                Un utilisateur peux modifié, listé les gens selon des critères et supprimé des contacts
+            </h3>
+            <h3>Un contact supprimé de votre coté ne vos pas dire que l'autre n'a plus votre contact</h3>
+            <h3>La manière pour ajouté des contacts et relations sera par la table relation SQL</h3><h3>
+                et la maniere de listé selon des critère sera par le champ tag et ordre (order)</h3>
+            <img src="images/phoneicon.png" height=300 />
+        </article>
+        <article>
+            <h2> Dans qu'elle But ?</h2>
+            <h3>Il a été choisi de faire un projet web ou l'on créer un site pour que un utilisateur
+            </h3><h3> se connecte ou s'inscrit pour avoir accès a son répertoire en ligne
+            </h3>
+            <h3> Pour une meilleur experience il a été choisi qu'au lieux d'avoir un utilisateur avec un répertoire on</h3><h3>
+                laissera la possibilité d'avoir plusieurs utilisatur different avoir leur propre espace téléphonique.
+            </h3>
+
+        </article>
+    </div>
+    <footer>
+        <div class="center">
+            <h3>Ce site utilise des cookies</h3>
+            <h3>prototype de gestion de numéro de téléphone</h3>
+            <h3>Crédit : PAVARD Arthur JEAN-LOUIS Florian</h3>
+            <h3>accueil V1.1</h3>
+            <h3>Motel.inc tous droits réserver</h3>
+        </div>
+    </footer>
+    <div style="visibility: hidden;">ok</div>
+    <div style="visibility: hidden;">ok</div>
+</body>
+
+</html>
